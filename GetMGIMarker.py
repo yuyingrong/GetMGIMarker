@@ -71,5 +71,4 @@ for m in d:
 
 # need to know if mult identical marker names are put in R
 # e.g. both 'Cd45R' and 'B220' translate to 'Ptprc'
-# will entering 'Ptprc' twice in R cause a problem for Seurat?
-
+# consider: will entering 'Ptprc' twice in R cause a problem for Seurat?
