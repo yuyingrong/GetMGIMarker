@@ -61,6 +61,7 @@ Brassica rapa trio-binning genome assembly, recombination landscape
 
 Misc
 - 20220315ms.R: mass spectrometry data clustering
+- 2018-2019: plant duplicate gene retention scripts: https://drive.google.com/drive/folders/1vftU-BLgMZeUw42-xUxTfKDPOa_Gy6qy?usp=sharing
 
 # Tools
 
