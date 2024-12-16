@@ -3,7 +3,9 @@
 # Yuying Rong
 # clean code for all tasks
 
-# input
+
+# import input file
+
 file_path <- '/Users/shell/MSc/LMU/Schneeberger'
 
 import_cellsnp_output <- function (x) {
@@ -20,6 +22,10 @@ import_cellsnp_output <- function (x) {
   #            quote=F, row.names=F, col.names=F)
   return(m)
 }
+
+
+
+# process input file
 
 make_count_table <- function (x,m) {
   # make count table t for number of markers covered (position_indices) for each barcode_index
@@ -68,7 +74,10 @@ make_count_table <- function (x,m) {
   return(t)
 }
 
+
+
 # Task 1
+
 plot_num_markers_per_barcode <- function (x,t) {
   # change barcode_index into factors
   t$barcode_index <- as.factor(t$barcode_index)
@@ -85,7 +94,12 @@ plot_num_markers_per_barcode <- function (x,t) {
   dev.off()
 }
 
-# Task 6 marker density
+
+
+# Task 6
+
+# plot marker density: number of markers per region
+
 # input: mp, t_group barcode indices (txt generated from function make_count_table)
 # inherit: m
 plot_marker_position <- function (x,m,t) {
@@ -178,8 +192,10 @@ plot_marker_position <- function (x,m,t) {
 
 
 
-# CO resolution, or distance between adjacent markers
 # Task 2 part 1
+
+# crossover resolution, or distance between adjacent markers
+
 prep_resolution <- function (x,m) {
   # import marker_positions array mp from bash formatted table
   # row_number of mp correspond to position_indices of m
@@ -201,8 +217,13 @@ prep_resolution <- function (x,m) {
   rm(m_sorted)
 }
 
+
+
 # Task 2 part 2
-# after python: "20230731_calc_resolution.py"
+
+# after running python: "20230731_calc_resolution.py"
+# plot from output
+
 plot_resolution <- function (x) {
   # import res from python output
   res <- read.table(paste0(file_path, '/out/', x, '_res.csv'), header=T, sep=',')
@@ -484,6 +505,9 @@ plot_marker_coverage_depth <- function (x, m) {
 
 
 # Task 3&4
+# based on cellranger output,
+# calc breadth of coverage and depth of coverage,
+# make histograms
 
 # create var tb: barcode,occurrence
 tb <- readRDS('/Users/shell/MSc/LMU/Schneeberger/tb.rds')
