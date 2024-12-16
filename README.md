@@ -31,15 +31,15 @@ Single-cell same-cell RNA/ATAC-seq integration
 
 Nucleosome-removed single-cell ATAC-seq data analysis
 - clean_code.R: functions and guide to the analysis
-- 20230731_calc_resolution.py
+- 20230731calc_resolution.py
 - 20230810calc_depth_breadth_per_barcode.py
 - 20230820count_barcode_duplicates.py
-- 20230923_calc_distance.py
+- 20230923calc_distance.py
 - 20230928calc_avg_mkr_cvg_dep.py
 
 Brassica rapa trio-binning genome assembly, recombination landscape
-- extract_seq_append_to_fasta.py
-- rm_seq_from_fasta.py
+- 20240722extract_seq_append_to_fasta.py
+- 20240722rm_seq_from_fasta.py
 
 (below not uploaded)
 - cellranger.sh
