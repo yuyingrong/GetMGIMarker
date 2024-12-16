@@ -10,8 +10,8 @@ Single-cell RNA-seq
 - 20220325merge.R: merge datasets
 - 20220407normalize.R
 - 20220413clustering.R
-- 20220425trajectory.R: trajectory analysis
-- 20220518trajectory_function.R: clean code in functions
+- 20220425trajectory.R
+- 20220518trajectory_function.R: clean code organized into functions
 - 20220512dispersion_on_server.R
 - 20220614loom_viz.R
 - 20220701loom_heatmap.R
@@ -20,7 +20,6 @@ Bulk RNA-seq
 - 20220625DESeq2.R
 - 20220628GO.KEGG.R
 - 20220720loom_viz_func.R
-- AUCell_binarize.R
 
 Single-cell same-cell RNA/ATAC-seq integration
 - 20230206seurat.R
@@ -31,12 +30,12 @@ Single-cell same-cell RNA/ATAC-seq integration
 - 20230223scrublet.ipynb
 
 Nucleosome-removed single-cell ATAC-seq data analysis
+- clean_code.R: functions and guide to the analysis
 - 20230731_calc_resolution.py
 - 20230810calc_depth_breadth_per_barcode.py
 - 20230820count_barcode_duplicates.py
 - 20230923_calc_distance.py
 - 20230928calc_avg_mkr_cvg_dep.py
-- clean_code.R
 
 Brassica rapa trio-binning genome assembly, recombination landscape
 - extract_seq_append_to_fasta.py
