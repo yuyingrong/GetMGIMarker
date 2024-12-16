@@ -30,7 +30,7 @@ Single-cell same-cell RNA/ATAC-seq integration
 - 20230223scrublet.ipynb
 
 Nucleosome-removed single-cell ATAC-seq data analysis
-- clean_code.R: functions and guide to the analysis
+- 20231008clean_code.R: functions and guide to the analysis
 - 20230731calc_resolution.py
 - 20230810calc_depth_breadth_per_barcode.py
 - 20230820count_barcode_duplicates.py
