@@ -1,6 +1,71 @@
-This repository contains scripts I wrote for efficiency. Feel free to adopt them for your own use. 
+This repository contains some scripts I wrote for analyses and efficiency. 
 
-# GetGeneID.py
+# List of scripts
+Tools (details see bottom)
+- GetGeneID.py
+- GetMGIMarker.py
+
+Single-cell RNA-seq
+- 20220315qc.R: quality control
+- 20220325merge.R: merge datasets
+- 20220407normalize.R
+- 20220413clustering.R
+- 20220425trajectory.R: trajectory analysis
+- 20220518trajectory_function.R: clean code in functions
+- 20220512dispersion_on_server.R
+- 20220614loom_viz.R
+- 20220701loom_heatmap.R
+
+Bulk RNA-seq
+- 20220625DESeq2.R
+- 20220628GO.KEGG.R
+- 20220720loom_viz_func.R
+- AUCell_binarize.R
+
+Single-cell same-cell RNA/ATAC-seq integration
+- 20230206seurat.R
+- 20230206signac.R
+- 20230208archR.R
+- 20230224doublet.R
+- 20230316portal.ipynb (see: https://github.com/YangLabHKUST/Portal/issues/6)
+- 20230223scrublet.ipynb
+
+Nucleosome-removed single-cell ATAC-seq data analysis
+- 20230731_calc_resolution.py
+- 20230810calc_depth_breadth_per_barcode.py
+- 20230820count_barcode_duplicates.py
+- 20230923_calc_distance.py
+- 20230928calc_avg_mkr_cvg_dep.py
+- clean_code.R
+
+Brassica rapa trio-binning genome assembly, recombination landscape
+- extract_seq_append_to_fasta.py
+- rm_seq_from_fasta.py
+
+(below not uploaded)
+- cellranger.sh
+- jellyfish.sh
+- busco.sh
+- cellsnp-lite.sh
+- hifiasm.sh
+- merqury.sh
+- minimap2.sh
+- mmseqs2.sh
+- mosdepth.sh
+- mummer.sh
+- omni-c.sh
+- purge_dups.sh
+- quast.sh
+- ragtag.sh
+- syri.sh
+- yak.sh
+
+Misc
+- 20220315ms.R: mass spectrometry data clustering
+
+# Tools
+
+**GetGeneID.py**
 Last update: 2022 May 09.
 Required package: selenium.
 Required installation: chromedriver. 
@@ -16,7 +81,7 @@ Usage:
 - Run the script.
 - Results will be printed to the console. 
 
-# GetMGIMarker.py
+**GetMGIMarker.py**
 Last update: 2020 Dec 13 (Script may be outdated due to selenium update, see GetGeneID for updated usage).
 Required package: selenium.
 Written with Python 3.8.3.
@@ -28,3 +93,7 @@ Scrapes info from: http://www.informatics.jax.org/batch/summary.
 Usage:
 - Use text editor to replace the list of mRNA/protein names with your search terms and run the script.
 - Results will be returned to the console. 
+
+
+
+
