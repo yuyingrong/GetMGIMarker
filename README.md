@@ -6,12 +6,12 @@ Tools (details see bottom)
 - GetMGIMarker.py
 
 Single-cell RNA-seq
-- 20220315qc.R: quality control
-- 20220325merge.R: merge datasets
+- 20220315qc.R (quality control visualizations)
+- 20220325merge.R (merge datasets sequenced from multiple samples)
 - 20220407normalize.R
 - 20220413clustering.R
 - 20220425trajectory.R
-- 20220518trajectory_function.R: clean code organized into functions
+- 20220518trajectory_function.R (clean code organized into functions)
 - 20220512dispersion_on_server.R
 - 20220614loom_viz.R
 - 20220701loom_heatmap.R
@@ -30,12 +30,12 @@ Single-cell same-cell RNA/ATAC-seq integration
 - 20230223scrublet.ipynb
 
 Nucleosome-removed single-cell ATAC-seq data analysis
-- 20231008clean_code.R: functions and guide to the analysis
+- 20231008clean_code.R (functions and guide to the analysis)
 - 20230731calc_resolution.py
 - 20230810calc_depth_breadth_per_barcode.py
 - 20230820count_barcode_duplicates.py
 - 20230923calc_distance.py
-- 20230928calc_avg_mkr_cvg_dep.py
+- 20230928calc_avg_mkr_cvg_dep.py (average marker coverage depth, number of times an SNP marker is covered by reads)
 
 Brassica rapa trio-binning genome assembly, recombination landscape
 - 20240722extract_seq_append_to_fasta.py
