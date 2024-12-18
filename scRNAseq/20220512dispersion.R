@@ -1,4 +1,6 @@
 
+# dispersion analysis using seurat and monocle
+
 setwd('~/fx/')
 
 #library(Seurat)
