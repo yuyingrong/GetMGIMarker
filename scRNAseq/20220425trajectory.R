@@ -63,7 +63,7 @@ dim(exp)
 # genes*cells
 
 # choice of expressionFamily
-# acc to: https://www.jianshu.com/p/5d6fd4561bc0
+# inspired by: https://www.jianshu.com/p/5d6fd4561bc0
 
 # FPKM/TPM are often normal dist: tobit()
 # UMI and transcript counts can be modeled better with negative binomial dist with fixed variance: negbinomial.size()
@@ -77,7 +77,7 @@ cds <- newCellDataSet(as(as.matrix(exp),'sparseMatrix'),
 # invalid class “CellDataSet” object: 1: feature numbers differ between assayData and featureData
 # invalid class “CellDataSet” object: 2: featureNames differ between assayData and featureData
 
-# acc to: https://www.jianshu.com/p/5d6fd4561bc0
+# inspired by: https://www.jianshu.com/p/5d6fd4561bc0
 # ncol(exp) must equal nrow(phenoData): cell number
 # nrow(exp) must equal nrow(featureData): gene number
 
@@ -254,11 +254,9 @@ dev.off()
 
 
 plot_pseudotime_heatmap
-Time_diff <- differentialGeneTest(cds[var_features,], 
-								cores = 1, 
-								fullModelFormulaStr = "~sm.ns(Pseudotime)")
+Time_diff <- differentialGeneTest(cds[var_features,], cores = 1, fullModelFormulaStr = "~sm.ns(Pseudotime)")
 								
-Time_diff <- Time_diff[,c(5,2,3,4,1,6,7)] #把gene放前面，也可以不改
+Time_diff <- Time_diff[,c(5,2,3,4,1,6,7)]# places genes in the beginning, or not
 
 write.csv(Time_diff, "Time_diff_all.csv", row.names = F)
 
@@ -267,15 +265,3 @@ Time_genes <- Time_diff %>% pull(gene_short_name) %>% as.character()
 p=plot_pseudotime_heatmap(cds[Time_genes,], num_clusters=4, show_rownames=T, return_heatmap=T)
 
 ggsave("Time_heatmapAll.pdf", p, width = 5, height = 10)
-
-
-
-
-
-
-
-
-
-
-
-
