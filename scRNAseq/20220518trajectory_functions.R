@@ -1,6 +1,7 @@
 
 # 202205013
-# Monocle 2 - only the essentials
+# Monocle 2 - "only the essentials"
+# the trajectory script organized into functions for running on multiple samples on the server
 
 library(Seurat)
 library(dplyr)
