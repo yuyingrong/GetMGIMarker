@@ -1,6 +1,9 @@
 
-# 2022 MAR
+# 20220315
 # Yuying Rong
+# this script takes mass spectrometry output (.csv) and
+# cluster muscle samples according to their protein data
+# output: sample clusters PCA plot (.pdf)
 
 setwd('~/Labs/xinhua/massSpec/')
 x <- read.csv('iFOT_20200913.csv')
