@@ -267,6 +267,3 @@ for (i in levels(data$seurat_clusters)[-1]) {
 colnames(AUC_by_seurat_clusters)
 dim(AUC_by_seurat_clusters)
 AUC_by_seurat_clusters[1:4,1:3]
-
-
-
