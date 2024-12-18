@@ -1,7 +1,12 @@
 
 # Yuying Rong
 # 2022
-# adopted from: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
+
+# this script visualizes scRNA-seq output for quality control 
+# before and after filtering single cells
+# it also visualizes marker gene expression levels
+# inspired by: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
+
 library(Seurat)
 library(ggplot2)
 library(dplyr)
