@@ -2,7 +2,6 @@
 # 20220413 clustering
 # "as default as possible"
 
-
 library(Seurat)
 library(ggplot2)
 library(dplyr)
@@ -450,10 +449,3 @@ for (i in levels(factor(markers$cluster))) {
 	sub_cluster <- subset(markers, cluster==i)
 	sub_cluster[order(sub_cluster$avg_log2FC, decreasing=TRUE),] %>% write.csv(file=paste0('markers/sample_13456_clust_1346/res_0.55/seurat_clust_',i,'_vs_all.csv'))
 }
-
-
-
-
-
-
-
