@@ -1,6 +1,6 @@
 
 # 20220614
-# pyscenic loom output visualization
+# gene regulatory network inference and clustering using pyscenic .loom output visualization
 
 library(dplyr)
 library(Seurat)
