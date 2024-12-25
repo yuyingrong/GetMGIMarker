@@ -1,7 +1,6 @@
 
-#
-#
-#
+# same-cell single-cell RNA- and ATAC-seq multiomic data integration
+# attempting to use signac to process ATAC-seq data
 
 # signac multiome
 
@@ -19,7 +18,7 @@ setwd('~/Labs/wijst/')
 # but without installing "ade4", all packages can load
 #install.packages("remotes")
 #remotes::install_github("sdray/ade4")
-#
+
 
 library(Signac)
 library(Seurat)
@@ -416,9 +415,5 @@ dim(metadata_rna)
 # 11898 23
 metadata_atac$predicted.celltype.l1 <- metadata_rna$predicted.celltype.l1[match(metadata_rna$barcode, metadata_atac$barcode, nomatch = '0')]
 # Error: replacement has 10272 rows, data has 10846
-
-
-
-
 
 
