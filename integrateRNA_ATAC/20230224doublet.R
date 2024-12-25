@@ -1,7 +1,7 @@
 
-#
-#
-#
+# same-cell single-cell RNA- and ATAC-seq multiomic data integration
+# doublet analysis using ArchR
+
 
 setwd('Labs/wijst/')
 rds <- readRDS('QualityControl/pbmc_granulocyte_sorted_10k_atac/pbmc_granulocyte_sorted_10k_atac-Doublet-Summary.rds')
