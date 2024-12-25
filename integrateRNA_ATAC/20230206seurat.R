@@ -1,7 +1,7 @@
 
-#
-#
-#
+# same-cell single-cell RNA- and ATAC-seq multiomic data integration
+# merging two datasets in one seurat object
+# integrating same-cells and clustering
 
 # install.packages('Seurat')
 library(Seurat)
@@ -195,8 +195,7 @@ table(rna$doublet)
 colnames(data@meta.data)
 # "orig.ident"   "nCount_RNA"   "nFeature_RNA" "percent_mt"
 
-# where are the clusters!?
-# oh, I saved another RDS from "20230206signac.R"
+# import clusters
 pbmc <- readRDS('rds/signac_pbmc_multiome_unfiltered.rds')
 
 colnames(pbmc@meta.data)
@@ -684,10 +683,6 @@ pbmc <- RunAzimuth(pbmc, reference = 'pbmcref')
 DimPlot(pbmc, reduction = 'ref.umap', group.by = 'predicted.celltype.l2', label = TRUE, repel = TRUE, label.size = 3) + NoLegend()
 colnames(pbmc@meta.data)
 DimPlot(pbmc, reduction = 'ref.umap', group.by = 'predicted.celltype.l1', label = TRUE, repel = TRUE, label.size = 3) + NoLegend()
-
-
-
-
 
 
 
