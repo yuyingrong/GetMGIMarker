@@ -1,11 +1,9 @@
 
-#
-#
-#
-##
+# same-cell single-cell RNA- and ATAC-seq multiomic data integration
+# ArchR for ATAC-seq data analysis and manipulation
+
 
 setwd('~/Labs/wijst')
-# ArchR
 
 # install.packages("devtools")
 library(ArchR)
